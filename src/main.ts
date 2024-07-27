@@ -8,10 +8,8 @@ import { Pinia } from "./plugins/pinia/pinia";
 export function createApp() {
   const app = createSSRApp(App);
   installHttp(uni);
-
   app.use(Pinia);
   app.use(uviewPlus);
-
   return {
     app,
   };
