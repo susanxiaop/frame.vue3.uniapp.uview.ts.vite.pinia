@@ -1,9 +1,3 @@
-/*
- * @Author: mfxhb
- * @Date: 2022-11-29 14:06:36
- * @LastEditTime: 2022-11-29 14:58:07
- * @Description:
- */
 function installHttp(uni: Uni): void {
   // 初始化请求配置
   uni.$u.http.setConfig((config) => {

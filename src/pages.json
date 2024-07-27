@@ -1,17 +1,93 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "view/others/login/login",
+			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "登录页"
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/matches/index",
+			"style": {
+				"navigationBarTitleText": "比赛"
+			}
+		},
+		{
+			"path": "pages/schedule/index",
+			"style": {
+				"navigationBarTitleText": "index"
+			}
+		},
+		{
+			"path": "pages/results/index",
+			"style": {
+				"navigationBarTitleText": "index"
+			}
+		},
+		{
+			"path": "pages/profile/index",
+			"style": {
+				"navigationBarTitleText": "index"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/home/indexPlacard",
+			"style": {
+				"navigationBarTitleText": "indexPlacard"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	// 设置 TabBar
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#27BA9B",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconPath": "static/tabs/home.png",
+				"selectedIconPath": "static/tabs/home-active.png"
+			},
+			{
+				"pagePath": "pages/matches/index",
+				"text": "比赛",
+				"iconPath": "static/tabs/matches.png",
+				"selectedIconPath": "static/tabs/matches-active.png"
+			},
+			{
+				"pagePath": "pages/schedule/index",
+				"text": "赛程",
+				"iconPath": "static/tabs/schedule.png",
+				"selectedIconPath": "static/tabs/schedule-active.png"
+			},
+			{
+				"pagePath": "pages/results/index",
+				"text": "成绩",
+				"iconPath": "static/tabs/results.png",
+				"selectedIconPath": "static/tabs/results-active.png"
+			},
+			{
+				"pagePath": "pages/profile/index",
+				"text": "我的",
+				"iconPath": "static/tabs/profile.png",
+				"selectedIconPath": "static/tabs/profile-active.png"
+			}
+		]
 	},
 	"easycom": {
 		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175

@@ -1,9 +1,3 @@
-/*
- * @Author: mfxhb
- * @Date: 2022-11-29 09:58:01
- * @LastEditTime: 2022-11-29 16:22:19
- * @Description:
- */
 import { createSSRApp } from "vue";
 import App from "./App.vue";
 
